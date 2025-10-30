@@ -1,11 +1,11 @@
 # Путь к папке проекта
-$ProjectPath = "C:\Users\User\my-docker-app"
+$ProjectPath = "C:\Users\User\my-docker-app\for-git"
 
 # Переходим в папку проекта
 Set-Location $ProjectPath
 
 Write-Host "Pulling latest changes from GitHub..."
-git pull origin master
+git pull origin main
 
 Write-Host "Stopping old containers..."
 docker-compose down
